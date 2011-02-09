@@ -3,7 +3,11 @@
 from html5lib import sanitizer, serializer, tokenizer, treebuilders, treewalkers, HTMLParser
 from django.utils.html import strip_tags
 from forum.utils.html2text import HTML2Text
-from django.template import mark_safe
+try:
+    from django.template import mark_safe
+except ImportError:
+    from django.utils.safestring import mark_safe
+
 from forum import settings
 
 class HTMLSanitizerMixin(sanitizer.HTMLSanitizerMixin):
