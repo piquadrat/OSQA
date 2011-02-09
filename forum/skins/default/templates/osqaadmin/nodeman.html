@@ -392,7 +392,7 @@
                 <li class="selected"><a href="{% url admin_tools "nodeman" %}?{{ uri }}">{{ name }}</a></li>
                 {% endfor %}
             </ul>
-            <form action="" method="POST">
+            <form action="" method="POST">{% csrf_token %}
                 <input name="filter_name" type="text" size="20" id="filter-name-box" style="color: #AAA;" value="{% trans "Filter name..." %}" />
                 <button name="save_filter" value="0" style="color: #AAA;" title="{% trans "Click to save the current filter" %}" id="save-filter-button" disabled="disabled" class="button">{% trans "Save" %}</button>
             </form>
@@ -404,7 +404,7 @@
             </form>{% endcomment %}
             </div>
         </div>
-        <form id="changelist-form" method="POST" action="">
+        <form id="changelist-form" method="POST" action="">{% csrf_token %}
             <div class="actions">
                 <label>
                     {% trans "Action" %}:

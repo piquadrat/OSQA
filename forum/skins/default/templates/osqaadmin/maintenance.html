@@ -7,7 +7,7 @@
 {% block description %}{% trans "Maintainance mode allows you to close your site for maintainance, allowing only a predetermined set of ip addresses to access it normally." %}{% endblock %}
 
 {% block admincontent %}
-<form method="POST" action="">
+<form method="POST" action="">{% csrf_token %}
     {% if in_maintenance %}
         <h1>{% trans "Your site is currently running on maintenance mode." %}</h1>
         <p>{% trans "You can adjust the settings bellow" %}</p>
