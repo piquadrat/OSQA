@@ -31,8 +31,8 @@ for pattern_file in module_patterns:
 
 urlpatterns += patterns('',
                         url(r'^$', app.readers.index, name='index'),
-                        url(r'^%s(.*)' % _('nimda/'), admin.site.root),
-                        
+                        (r'^%s/' % _('nimda/'), include(admin.site.urls)),
+
                         url(r'^sitemap.xml$', 'forum.sitemap.index', {'sitemaps': sitemaps}),
                         url(r'^sitemap-(?P<section>.+)\.xml$', 'forum.sitemap.sitemap', {'sitemaps': sitemaps}),
 
