@@ -12,8 +12,13 @@ import logging
 #note - Django template loaders use method django.utils._os.safe_join
 #to work on unicode file paths
 #here it is ignored because it is assumed that we won't use unicode paths
+DIRECTORY = os.path.dirname(__file__)
 
 def load_template_source(name, dirs=None):
+    if not dirs:
+        dirs = [DIRECTORY]
+    else:
+        dirs.append(DIRECTORY)
     try:
         tname = os.path.join(settings.OSQA_DEFAULT_SKIN,'templates',name)
         return filesystem.load_template_source(tname,dirs)
