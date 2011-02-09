@@ -1,0 +1,93 @@
+What is OSQA? OSQA is…
+----------------------
+
+
+-  the ‘Open Source Question and Answer’ system
+-  a way to connect people to the information they’re looking for
+-  software that’s distributed for free under the terms of the
+   `GNU General Public Licence (GPL) <http://www.gnu.org/licenses/gpl.html>`_
+-  written in Python and powered by the Django application
+   framework
+-  brought to you by the folks at
+   `DZone\* <http://www.dzone.com>`_, the home of one of the web’s
+   biggest software developer communities
+
+What features does OSQA have and what can I do with it?
+-------------------------------------------------------
+
+At its very core, OSQA is a social question and answer system.
+However, OSQA’s
+`roadmap <http://jira.osqa.net/browse/OSQA>`_ includes features and
+functions that extend its usefulness beyond just a Q&A site. Those
+features include:
+
+
+-  A question and answer engine that’s dead simple to use, has
+   wiki-like features and a voting system
+-  A social networking engine that allows you to connect with and
+   follow other people and topics and send private messages to each
+   other
+-  A reputation system that lets you give and receive props for
+   positive contributions to the community
+-  A powerful search function that helps you find relevant
+   information quickly and easily
+-  The ability to create groups to help narrow content focus
+-  The ability to export site data
+-  The ability to easily federate content that’s created on your
+   site (federating content = reusing content generated on one of your
+   sites in another)
+-  The ability to import data from your current or old Stack
+   Exchange site
+-  Support for widgets to expand functionality
+-  Automatic site activity reports
+-  The ability to customize your site using themes
+-  The ability to embed videos, audio and images
+
+When all these features and functions are incorporated, the OSQA
+platform will be powerful enough that you can create virtually
+anything that your mind can conjure! Potential uses for OSQA
+include:
+
+
+-  An online forum
+-  Your company’s support platform
+-  A new-age blogging platform
+-  A basic project collaboration platform
+-  A wiki platform
+-  A mini-social network (think social networks for clubs,
+   families, etc. to keep in touch, and share information and news)
+-  A simple Content Management System (CMS)
+-  A basic Q&A site about any topic (naturally!)
+
+How do I start a site using OSQA?
+---------------------------------
+
+There are two ways you can create an OSQA site:
+
+
+-  Register with one of our hosting partners who may be able to
+   help you set up and host your OSQA site
+-  Download the installer package and host it yourself or with your
+   preferred host (more permanent solution)
+
+Who is DZone?
+-------------
+
+DZone is a technology publishing company that produces valuable
+content and resources for the software development community. We
+started off life as Javalobby, a grassroots developer community and
+have grown to reach over 2.3M software developers and architects
+every month.
+
+Why did DZone create OSQA?
+--------------------------
+
+DZone created the OSQA platform to power some new sites that we
+will launch soon.
+
+Why are you giving OSQA away for free?
+--------------------------------------
+
+We strongly believe in the ‘OS’ in OSQA and in giving back to the
+community that has helped us grow into what we are, so we’re
+providing the software to anyone who wants to use it for free.
