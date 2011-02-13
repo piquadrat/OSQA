@@ -1,4 +1,4 @@
-import os
+import os, inspect
 from itertools import groupby
 from django.shortcuts import render_to_response, get_object_or_404
 from django.core.urlresolvers import reverse
@@ -31,6 +31,13 @@ def custom_css(request):
 def static(request, title, content):
     return render_to_response('static.html', {'content' : content, 'title': title},
                               context_instance=RequestContext(request))
+django_serve = serve
+takes_insecure = 'insecure' in inspect.getargspec(serve)[0]
+
+def serve(*args, **kwargs):
+    if takes_insecure:
+        kwargs['insecure'] = True
+    return django_serve(*args, **kwargs)
 
 def media(request, skin, path):
     response = serve(request, "%s/media/%s" % (skin, path),
