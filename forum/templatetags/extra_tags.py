@@ -124,7 +124,7 @@ def media(url):
         # Make sure any duplicate forward slashes are replaced with a single
         # forward slash.
         url_prefix = re.sub("/+", "/", url_prefix)
-
+        url_prefix = url_prefix.replace('http:/', 'http://')
         url = url_prefix + url
         return url
 
